@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="us-en">
+<head>
+    <title>{{ pageTitle|default('Index') }} | Amtgard ORK</title>
+    <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/foundation/6.1.1/foundation.min.css">
+</head>
+<body>
+    <div class="row">
+        <div class="columns-12 small">
+            {% block content %}
+            {% endblock %}
+        </div>
+    </div>
+    {% block javascript %}
+    {% endblock %}
+    <script type="text/javascript" src="//code.jquery.com/jquery-2.2.0.min.js"></script>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/foundation/6.1.1/foundation.min.js"></script>
+</body>
+</html>
